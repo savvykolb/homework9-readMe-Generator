@@ -66,7 +66,7 @@ inquirer
         },
         {
             type: 'input',
-            name: 'tests',
+            name: 'test',
             message: 'List any tests users can run for your application.',
         },
     ])
