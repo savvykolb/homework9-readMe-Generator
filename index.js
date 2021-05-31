@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -10,45 +11,76 @@ inquirer
         {
             type: 'input',
             name: 'name',
-            message: 'What is your name?', // change question
+            message: 'What is your name?',
         },
         {
             type: 'input',
-            name: 'location',
-            message: 'Where are you from?', // change question
+            name: 'email',
+            message: 'What is your email?',
         },
         {
             type: 'input',
-            name: 'hobby',
-            message: 'What is your favorite hobby?', //change question
+            name: 'username',
+            message: 'What is your Github username?',
         },
         {
             type: 'input',
-            name: 'food',
-            message: 'What is your favorite food?', //change question
+            name: 'title',
+            message: 'What is your project title?',
         },
         {
             type: 'input',
-            name: 'github',
-            message: 'Enter your GitHub Username', //change question
+            name: 'repo',
+            message: 'What is the link to the repository for this project?',
         },
         {
             type: 'input',
-            name: 'linkedin',
-            message: 'Enter your LinkedIn URL.', //change question
+            name: 'deployed',
+            message: 'What is the deployed link to this project?',
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a short description explaining the what, why, and how of your project.',
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'What are the steps required to install your project?',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide instructions and examples for use.',
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Choose the appropriate license for this project:',
+            choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open"],
+        },
+        {
+            type: 'input',
+            name: 'contributors',
+            message: 'How can others contribute to your project?',
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Provide examples on how to run tests for your application.',
         },
     ])
-    
-    // TODO: Create a function to write README file
-    function writeToFile(fileName, data) { }
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) { }
 
     .then((answers) => {
-        const htmlPageContent = generateHTML(answers); //change HTML names 
+    const READMEPageContent = generateREADME(answers); //change HTML names 
 
-        fs.writeFile('index.html', htmlPageContent, (err) => //change HTML names
-            err ? console.log(err) : console.log('Successfully created index.html!')
-        );
-    });
+    fs.writeFile('README.md', READMEPageContent, (err) => //change HTML names
+        err ? console.log(err) : console.log('Successfully created README.md!')
+    );
+});
 
 
 // TODO: Create a function to initialize app
