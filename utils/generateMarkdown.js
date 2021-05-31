@@ -2,6 +2,8 @@ function generateMarkdown(data) {
   return `
 # Project Title : ${data.title}
 
+![${data.license}](https://img.shields.io/badge/license-${data.license}-brightgreen)
+
 ## Project Description:
 ${data.desc}
 
@@ -12,8 +14,6 @@ ${data.desc}
 * [Test](#test)
 * [Questions](#questions)
 * [License](#license)
-* [Author] (#Author)
-* [Badges](#badges)
 
 ## Installation
 ${data.install}
@@ -51,12 +51,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Author 
-![GitHub profile pic](${data.image})
-
-## Badges
-![badmath](https://img.shields.io/github/repo-size/${data.username}/${data.repo})
 `;
 }
 

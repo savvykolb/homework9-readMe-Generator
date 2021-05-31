@@ -1,8 +1,10 @@
 
-# Project Title : undefined
+# Project Title : ajhsdnglaskj
+
+![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Project Description:
-undefined
+ajdkfbgn
 
 ## Table of Contents
 * [Installation](#installation)
@@ -11,27 +13,25 @@ undefined
 * [Test](#test)
 * [Questions](#questions)
 * [License](#license)
-* [Author] (#Author)
-* [Badges](#badges)
 
 ## Installation
-undefined
+ahbfdg
 
 ## Usage
-undefined
+ajkdfhg
 
 ## Contributors
-undefined
+a'lhjg
 
 ## Test
 undefined
 
 ## Questions
-If you have questions about this application please email: undefined
-Or visit my Github profile: https://github.com/undefined
+If you have questions about this application please email: ajoskghna
+Or visit my Github profile: https://github.com/jdkkdkk
 
 ## License
-    undefined Copyright (c) 2021 undefined
+    MIT Copyright (c) 2021 ago;sjl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -50,9 +50,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Author 
-![GitHub profile pic](undefined)
-
-## Badges
-![badmath](https://img.shields.io/github/repo-size/undefined/undefined)

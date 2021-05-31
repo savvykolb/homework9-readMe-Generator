@@ -40,12 +40,12 @@ inquirer
         },
         {
             type: 'input',
-            name: 'description',
+            name: 'desc',
             message: 'Provide a short description explaining the what, why, and how of your project.',
         },
         {
             type: 'input',
-            name: 'installation',
+            name: 'install',
             message: 'What are the steps required to install your project?',
         },
         {
@@ -67,15 +67,15 @@ inquirer
         {
             type: 'input',
             name: 'tests',
-            message: 'Provide examples on how to run tests for your application.',
+            message: 'List any tests users can run for your application.',
         },
     ])
 
+
     .then((answers) => {
         const READMEPageContent = generateMarkdown(answers);
-    
-        fs.writeFile('README.md', READMEPageContent, (err) =>
-          err ? console.log(err) : console.log('Successfully created README.md!')
-        );
-      });
 
+        fs.writeFile('README.md', READMEPageContent, (err) =>
+            err ? console.log(err) : console.log('Successfully created README.md!')
+        );
+    });
