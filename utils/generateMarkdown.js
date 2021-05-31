@@ -3,6 +3,8 @@ function generateMarkdown(data) {
 # Project Title : ${data.title}
 
 ![${data.license}](https://img.shields.io/badge/license-${data.license}-brightgreen)
+#### ${data.deployed}
+#### ${data.repo}
 
 ## Project Description:
 ${data.desc}
@@ -10,7 +12,7 @@ ${data.desc}
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
+* [Contributors](#contributors)
 * [Test](#test)
 * [Questions](#questions)
 * [License](#license)
