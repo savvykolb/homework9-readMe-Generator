@@ -71,22 +71,11 @@ inquirer
         },
     ])
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
-
     .then((answers) => {
-    const READMEPageContent = generateREADME(answers); //change HTML names 
+        const READMEPageContent = generateMarkdown(answers);
+    
+        fs.writeFile('README.md', READMEPageContent, (err) =>
+          err ? console.log(err) : console.log('Successfully created README.md!')
+        );
+      });
 
-    fs.writeFile('README.md', READMEPageContent, (err) => //change HTML names
-        err ? console.log(err) : console.log('Successfully created README.md!')
-    );
-});
-
-
-// TODO: Create a function to initialize app
-function init() { }
-
-//Not sure what this means yet
-
-// Function call to initialize app
-init();
